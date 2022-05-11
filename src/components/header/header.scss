@@ -1,0 +1,10 @@
+@use "../../../sassStyles/index" as *;
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-bottom: 1px solid black;
+    background: linear-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.2));
+}

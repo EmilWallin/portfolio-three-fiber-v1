@@ -1,0 +1,10 @@
+@use "../../sassStyles/index" as *;
+
+.page-container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, $shadeColor1, $shadeColor2),
+        linear-gradient(135deg, $shadeColor2, $shadeColor1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 50s ease infinite;
+}

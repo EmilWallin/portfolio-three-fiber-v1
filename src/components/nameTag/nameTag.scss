@@ -1,0 +1,18 @@
+@use "../../../sassStyles/index" as *;
+
+.name-text {
+    font-family: "Fira Mono", monospace;
+    font-weight: 500;
+
+    margin: auto 20px;
+    width: auto;
+    font-size: 400%;
+
+    background: linear-gradient(90deg, $logoShade1, $logoShade2);
+    background-size: 400% 400%;
+    animation: logoBlip 15s infinite linear;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
