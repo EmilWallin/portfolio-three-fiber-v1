@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 @keyframes gradientAnimation {
   0% {
     background-position: 45% 0%;
@@ -26,6 +27,43 @@
 .logo-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: auto;
+  padding-top: 0;
+  margin-top: 0;
+  color: rgb(95, 105, 112);
+}
+
+.logo-container:hover .pre-text {
+  opacity: 1;
+  transform: translateX(30%);
+}
+
+.logo-container:hover .post-text {
+  opacity: 1;
+  transform: translateX(-30%);
+}
+
+.logo {
+  width: 20%;
+}
+
+.pre-text,
+.post-text {
+  opacity: 0;
+  font-family: "Koulen", cursive;
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.8s, transform 0.6s;
+}
+
+.pre-text {
+  transform: translateX(70%);
+}
+
+.post-text {
+  transform: translateX(-70%);
 }
 
 /*# sourceMappingURL=logoContainer.css.map */

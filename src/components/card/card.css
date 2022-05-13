@@ -24,12 +24,15 @@
     background-position: 0% 0%;
   }
 }
-.page-container {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(45deg, #93e0b1, #68a3df), linear-gradient(135deg, #68a3df, #93e0b1);
-  background-size: 400% 400%;
-  animation: gradientAnimation 50s ease infinite;
+.card-container-div {
+  box-sizing: border-box;
+  padding: 2rem;
 }
 
-/*# sourceMappingURL=home.css.map */
+.card-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=card.css.map */
