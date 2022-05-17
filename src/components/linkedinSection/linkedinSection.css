@@ -24,9 +24,9 @@
     background-position: 0% 0%;
   }
 }
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.linkedin-section {
+  background: linear-gradient(rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.2));
+  border-bottom: 1px solid black;
 }
 
-/*# sourceMappingURL=cardContainer.css.map */
+/*# sourceMappingURL=linkedinSection.css.map */

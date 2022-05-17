@@ -27,7 +27,7 @@
 .page-container {
   height: 100%;
   width: 100%;
-  background: linear-gradient(45deg, #93e0b1, #68a3df), linear-gradient(135deg, #68a3df, #93e0b1);
+  background: linear-gradient(45deg, #93e0b1, #62fcbc), linear-gradient(135deg, #62fcbc, #93e0b1);
   background-size: 400% 400%;
   animation: gradientAnimation 50s ease infinite;
 }

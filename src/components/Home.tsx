@@ -6,6 +6,7 @@ import "./home.css";
 //components
 import Header from "./header/Header";
 import GithubSection from "./githubSection/GithubSection";
+import LinkedinSection from "./linkedinSection/LinkedinSection";
 
 function Home() {
     return (
@@ -13,6 +14,7 @@ function Home() {
             <Header />
             <div className="content-container">
                 <GithubSection />
+                <LinkedinSection />
             </div>
         </div>
     );

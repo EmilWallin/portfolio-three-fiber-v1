@@ -15,14 +15,14 @@ type GLTFResult = GLTF & {
         Curve: THREE.Mesh;
     };
     materials: {
-        SVGMat: THREE.MeshStandardMaterial;
+        ["SVGMat.001"]: THREE.MeshStandardMaterial;
     };
 };
 
-export default function Model({ ...props }: any) {
+export default function Model({ ...props }: JSX.IntrinsicElements["group"]) {
     const mesh = useRef<Mesh>(null);
     const { nodes, materials } = useGLTF(
-        "/modelAssets/Github.gltf"
+        "/modelAssets/LinkedIn.gltf"
     ) as GLTFResult;
 
     useFrame(() => {
@@ -38,9 +38,9 @@ export default function Model({ ...props }: any) {
                 castShadow
                 receiveShadow
                 geometry={nodes.Curve.geometry}
-                material={materials.SVGMat}
-                position={[0.05, -0.05, -0.08]}
-                scale={4.5}
+                material={materials["SVGMat.001"]}
+                position={[0.07, -0.01, -0.07]}
+                scale={32}
                 rotation={[89.8, 0, 0]}
             >
                 <meshNormalMaterial attach="material" />
@@ -49,4 +49,4 @@ export default function Model({ ...props }: any) {
     );
 }
 
-useGLTF.preload("/Github.gltf");
+useGLTF.preload("/LinkedIn.gltf");

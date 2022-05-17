@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./cardContainer.css";
 
+//Three
+import { Canvas } from "@react-three/fiber";
+
 //Components
 import Card from "../card/Card";
 
@@ -9,7 +12,6 @@ import getFeatured from "../../api/services/github-service";
 
 //Repo Class
 import Repo from "../../classes/Repo";
-import RepoType from "../../types/Repo";
 
 function CardContainer() {
     const emptyRepo = new Repo("", "", "", "");
@@ -27,7 +29,6 @@ function CardContainer() {
                 )
         );
 
-        console.log("data", data);
         setCardInfo(data);
     };
 
@@ -36,10 +37,10 @@ function CardContainer() {
     }, []);
 
     const getCards = () => {
-        return cardInfo.map((i) => <Card info={i} />);
+        return cardInfo.map((i) => <Card info={i} key={i.name} />);
     };
 
-    return <div className="container">{getCards()}</div>;
+    return <div className="card-container">{getCards()}</div>;
 }
 
 export default CardContainer;

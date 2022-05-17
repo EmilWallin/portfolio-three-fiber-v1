@@ -5,10 +5,10 @@ import "./githubSection.css";
 
 function GithubSection() {
     return (
-        <>
-            <LogoContainer />
+        <div className="github-section">
+            <LogoContainer logo="github" preText="GIT" postText="HUB" />
             <CardContainer />
-        </>
+        </div>
     );
 }
 

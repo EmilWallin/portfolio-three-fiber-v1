@@ -24,9 +24,11 @@
     background-position: 0% 0%;
   }
 }
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.language-logo {
+  width: 50px;
+  margin-top: 20px;
+  opacity: 0.5;
+  transition: opacity 1s;
 }
 
-/*# sourceMappingURL=cardContainer.css.map */
+/*# sourceMappingURL=language.css.map */

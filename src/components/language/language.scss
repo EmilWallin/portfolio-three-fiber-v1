@@ -1,0 +1,8 @@
+@use "../../../sassStyles/index" as *;
+
+.language-logo {
+    width: 50px;
+    margin-top: 20px;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
